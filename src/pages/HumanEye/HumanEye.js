@@ -12,7 +12,7 @@ const state = proxy({
 
 function Bio(props) {
     const group = useRef()
-    const { nodes, materials } = useGLTF('/model_of_human_eye/scene.gltf')
+    const { nodes, materials } = useGLTF('/biology_a_human_eye/scene.gltf')
     const [hovered, set] = useState(null)
     console.log(hovered)
     return (
@@ -23,10 +23,31 @@ function Bio(props) {
             onPointerDown={(e) => (e.stopPropagation(), (state.current = e.object.material.name))}
         >
             <group rotation={[-Math.PI / 2, 0, 0]}>
-                <group position={[-1.72, 2.83, 5.19]} rotation={[-0.81, 0.64, -0.44]}>
+                <group position={[-51.13, -6.92, -416.01]} rotation={[-Math.PI / 2, -0.24, 0]}>
                     <mesh geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} />
                     <mesh geometry={nodes.mesh_1.geometry} material={nodes.mesh_1.material} />
                     <mesh geometry={nodes.mesh_2.geometry} material={nodes.mesh_2.material} />
+                    <mesh geometry={nodes.mesh_3.geometry} material={nodes.mesh_3.material} />
+                    <mesh geometry={nodes.mesh_4.geometry} material={materials.mat1} />
+                    <mesh geometry={nodes.mesh_5.geometry} material={nodes.mesh_5.material} />
+                    <mesh geometry={nodes.mesh_6.geometry} material={nodes.mesh_6.material} />
+                    <mesh geometry={nodes.mesh_7.geometry} material={nodes.mesh_7.material} />
+                    <mesh geometry={nodes.mesh_8.geometry} material={nodes.mesh_8.material} />
+                    <mesh geometry={nodes.mesh_9.geometry} material={materials.mat11} />
+                    <mesh geometry={nodes.mesh_10.geometry} material={materials.mat12} />
+                    <mesh geometry={nodes.mesh_11.geometry} material={nodes.mesh_11.material} />
+                    <mesh geometry={nodes.mesh_12.geometry} material={nodes.mesh_12.material} />
+                    <mesh geometry={nodes.mesh_13.geometry} material={nodes.mesh_13.material} />
+                    <mesh geometry={nodes.mesh_14.geometry} material={nodes.mesh_14.material} />
+                    <mesh geometry={nodes.mesh_15.geometry} material={nodes.mesh_15.material} />
+                    <mesh geometry={nodes.mesh_16.geometry} material={materials.mat14} />
+                    <mesh geometry={nodes.mesh_17.geometry} material={materials.mat15} />
+                    <mesh geometry={nodes.mesh_18.geometry} material={materials.mat4} />
+                    <mesh geometry={nodes.mesh_19.geometry} material={materials.mat5} />
+                    <mesh geometry={nodes.mesh_20.geometry} material={materials.mat6} />
+                    <mesh geometry={nodes.mesh_21.geometry} material={materials.mat7} />
+                    <mesh geometry={nodes.mesh_22.geometry} material={materials.mat8} />
+                    <mesh geometry={nodes.mesh_23.geometry} material={materials.mat9} />
                 </group>
             </group>
         </group>
@@ -36,41 +57,41 @@ function Bio(props) {
 function Details() {
 
     const snap = useSnapshot(state)
-    if (snap.current === "Part1.2.3_ReferenceRepcolor128128128") {
-        return (
-            <div className="model_part_title">
-                <h1 className="model_part_desc">Body</h1>
-            </div>
-        )
-    }
-    else if (snap.current === "Part2_ReferenceRepcolor128128128") {
-        return (
-            <div className="model_part_title">
-                <h1 className="model_part_desc">Wheels</h1>
-            </div>
-        )
-    }
+    // if (snap.current === "Part1.2.3_ReferenceRepcolor128128128") {
+    //     return (
+    //         <div className="model_part_title">
+    //             <h1 className="model_part_desc">Body</h1>
+    //         </div>
+    //     )
+    // }
+    // else if (snap.current === "Part2_ReferenceRepcolor128128128") {
+    //     return (
+    //         <div className="model_part_title">
+    //             <h1 className="model_part_desc">Wheels</h1>
+    //         </div>
+    //     )
+    // }
 
-    else {
-        return (
-            <div className="view_info">
-                <h1 className="view_info_click">Click on diffrent parts of C 17 to know more</h1>
-                <p className="view_info_desc">To view the 3D model in AR, scan the QR code or click on the button below.</p>
+    // else {
+    //     return (
+    //         <div className="view_info">
+    //             <h1 className="view_info_click">Click on diffrent parts of C 17 to know more</h1>
+    //             <p className="view_info_desc">To view the 3D model in AR, scan the QR code or click on the button below.</p>
 
-                <div className="view_info_main">
-                    <img className="view_info_qr" src="https://storage.echo3d.co/shiny-wave-1052/268c3742-66a2-4139-9bbd-f3d153aba560.png" alt="Aircraft QR" />
-                    <a href="https://go.echo3d.co/Q61F" target="_blank" rel="noreferrer">
-                        <button className="view_info_button">View in AR</button>
-                    </a>
-                </div>
-            </div>
-        )
-    }
-    // return (
-    //     <div>
-    //         {snap.current}
-    //     </div>
-    // )
+    //             <div className="view_info_main">
+    //                 <img className="view_info_qr" src="https://storage.echo3d.co/shiny-wave-1052/268c3742-66a2-4139-9bbd-f3d153aba560.png" alt="Aircraft QR" />
+    //                 <a href="https://go.echo3d.co/Q61F" target="_blank" rel="noreferrer">
+    //                     <button className="view_info_button">View in AR</button>
+    //                 </a>
+    //             </div>
+    //         </div>
+    //     )
+    // }
+    return (
+        <div>
+            {snap.current}
+        </div>
+    )
 }
 
 export default function HumanEye() {
@@ -82,10 +103,10 @@ export default function HumanEye() {
 
                 <div className="model_info">
                     <h1 className="model_info_title">
-                        C-17 Globemaster III
+                        Human Eye
                     </h1>
                     <div className="explore_title_line"></div>
-                    <div className="model_info_desc">The McDonnell Douglas/Boeing C-17 Globemaster III is a large military transport aircraft that was developed for the United States Air Force (USAF) from the 1980s to the early 1990s by McDonnell Douglas. The C-17 carries forward the name of two previous piston-engined military cargo aircraft, the Douglas C-74 Globemaster and the Douglas C-124 Globemaster II.</div>
+                    <div className="model_info_desc">The human eye is a sense organ that reacts to light and allows vision. Rod and cone cells in the retina are photoreceptive cells which are able to detect visible light and convey this information to the brain.</div>
                 </div>
 
                 <div className="model3D">
@@ -95,7 +116,7 @@ export default function HumanEye() {
                             <ambientLight intensity={0.7} />
                             <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
                             <Suspense fallback={null}>
-                                <Bio scale={4} />
+                                <Bio scale={1} />
                                 <Environment preset="city" />
                                 <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                             </Suspense>

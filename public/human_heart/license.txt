@@ -1,0 +1,11 @@
+Model Information:
+* title:	human heart
+* source:	https://sketchfab.com/3d-models/human-heart-bc51630b88b94f5fb6bdaef1488041c3
+* author:	sammite (https://sketchfab.com/sammite86)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "human heart" (https://sketchfab.com/3d-models/human-heart-bc51630b88b94f5fb6bdaef1488041c3) by sammite (https://sketchfab.com/sammite86) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

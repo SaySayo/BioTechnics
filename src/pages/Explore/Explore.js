@@ -20,6 +20,15 @@ const Explore = () => {
 
             <div className="cards-list">
 
+                <Link to="/heart" className="card" style={{ textDecoration: "none" }}>
+                    <div className="card-image">
+                        <img alt="" src={HumanHeart} rel="" />
+                    </div>
+                    <div className="card-title title-black">
+                        <p>Human Heart</p>
+                    </div>
+                </Link>
+
                 <Link to="/humaneye" className="card" style={{ textDecoration: "none" }}>
                     <div className="card-image">
                         <img alt="" src={HumanEye} rel="" />
@@ -35,15 +44,6 @@ const Explore = () => {
                     </div>
                     <div className="card-title title-black">
                         <p>Human Brain</p>
-                    </div>
-                </Link>
-
-                <Link to="/heart" className="card" style={{ textDecoration: "none" }}>
-                    <div className="card-image">
-                        <img alt="" src={HumanHeart} rel="" />
-                    </div>
-                    <div className="card-title title-black">
-                        <p>Human Heart</p>
                     </div>
                 </Link>
 
