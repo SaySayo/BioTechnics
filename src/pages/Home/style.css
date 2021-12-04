@@ -1,0 +1,21 @@
+#navbar{
+    position: relative;
+    width: 100%;
+}
+
+#navbar ul{
+    list-style: none;
+}
+
+.page-wrapper{
+    position: relative;
+}
+
+.signout-btn{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #42cbe4;
+    text-align: center;
+    cursor: pointer;
+}
