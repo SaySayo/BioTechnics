@@ -4,15 +4,15 @@ BioTechnics is an AR-based web platform where students from any background can v
 
 ## Short Description
 
-We all know how thought it is to understand the complex and difficult topics in biology. BioTechnics is an AR-based web platform where students come across and learn about various biological science concepts. Learn with the help of interactive 3D Models and AR. BioTechnics can help students achieve better results through visualization and full immersion in the subject matter. We have built the site using React Js, Three Js, Auth0.
+We all know how tough it is to understand the complex and difficult topics in biology. BioTechnics is an AR-based web platform where students can freely access to learn about various biological science concepts and have fun while at it. Learning has been made simpler with the help of interactive 3D Models and AR. BioTechnics can help students achieve better results through visualization and full immersion in the subject matter. We have built the site using React Js, Three Js, Auth0.
 
 ## 💡 Inspiration
 
-We all know how thought to under and the complex and difficult topics in biology. And we all have experienced online classes are monotonous, the concept taught is not retrainable and practical are most important for subjects like biology, etc which require physical practice and visualization.
+We all know how tough it is to understand the complex and difficult topics in biology. And a lot of the time both physical and online classes can be quite monotonous, the concepts taught are not retrainable. The practical and visual aspects are the most important for subjects like biology, which require physical practice and visualization.
 
 ## 💻 What it does
 
-BioTechnics is an AR-based web platform where students come across and learn about various biological science concepts. Learn with the help of interactive 3D Models and AR. BioTechnics can help students achieve better results through visualization and full immersion in the subject matter.
+BioTechnics is an AR-based web platform where students can freely access to learn about various biological science concepts. Learning is made simpler with the help of interactive 3D Models and AR. BioTechnics can help students achieve better results through visualization and full immersion in the subject matter.
 
 ## 🔨 How we built it
 
