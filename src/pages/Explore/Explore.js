@@ -5,6 +5,8 @@ import HumanBrain from '../../assets/explore/human_brain.jpeg'
 import HumanHeart from '../../assets/explore/human_heart.jpg'
 import HumanSkeleton from '../../assets/explore/human_skeleton.jpeg'
 import PlantCell from '../../assets/explore/plant_cell.jpg'
+import DigestiveSystem from "../../assets/explore/digestive_system.jpg"
+import Lungs from '../../assets/explore/lungs.jpeg'
 import "./Explore.css"
 
 const Explore = () => {
@@ -38,15 +40,6 @@ const Explore = () => {
                     </div>
                 </Link>
 
-                <Link to="/humaneye" className="card" style={{ textDecoration: "none" }}>
-                    <div className="card-image">
-                        <img alt="" src={HumanEye} rel="" />
-                    </div>
-                    <div className="card-title title-black">
-                        <p>Human Eye</p>
-                    </div>
-                </Link>
-
                 <Link to="/skeleton" className="card" style={{ textDecoration: "none" }}>
                     <div className="card-image">
                         <img alt="" src={HumanSkeleton} rel="" />
@@ -62,6 +55,15 @@ const Explore = () => {
                     </div>
                     <div className="card-title title-black">
                         <p>Plant Cell</p>
+                    </div>
+                </Link>
+
+                <Link to="/lungs" className="card" style={{ textDecoration: "none" }}>
+                    <div className="card-image">
+                        <img alt="" src={Lungs} rel="" height="200" />
+                    </div>
+                    <div className="card-title title-black">
+                        <p>Lungs</p>
                     </div>
                 </Link>
 

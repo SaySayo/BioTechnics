@@ -219,19 +219,19 @@ function Bio(props) {
 function Details() {
 
     const snap = useSnapshot(state)
-    if (snap.current === "Material.010") {
+    if (snap.current === "Material.005") {
         return (
             <div className="model_part_title">
-                <h1 className="view_info_click">Cell Wall</h1>
-                <p className="view_info_desc">Cell wall</p>
+                <h1 className="view_info_click">Nucleus</h1>
+                <p className="view_info_desc">The nucleus is a membrane-bound structure that is present only in eukaryotic cells. The vital function of a nucleus is to store DNA or hereditary information required for cell division, metabolism and growth.</p>
             </div>
         )
     }
-    else if (snap.current === "Material.005") {
+    else if (snap.current === "Material.011") {
         return (
             <div className="model_part_title">
-                <h1 className="view_info_click">Nucleous</h1>
-                <p className="view_info_desc">Nucleous</p>
+                <h1 className="view_info_click">Cell Wall</h1>
+                <p className="view_info_desc">It is a rigid layer which is composed of cellulose, glycoproteins, lignin, pectin and hemicellulose. It is located outside the cell membrane. It comprises proteins, polysaccharides and cellulose.</p>
             </div>
         )
     }
@@ -239,11 +239,10 @@ function Details() {
         return (
             <div className="model_part_title">
                 <h1 className="view_info_click">Cytoplasm</h1>
-                <p className="view_info_desc">Cytoplasm</p>
+                <p className="view_info_desc">The cytoplasm is the gel-like fluid inside the cell. It is the medium for chemical reaction. It provides a platform upon which other organelles can operate within the cell. All of the functions for cell expansion, growth and replication are carried out in the cytoplasm of a cell.</p>
             </div>
         )
     }
-
     else {
         return (
             <div className="view_info">
