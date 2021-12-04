@@ -1,10 +1,15 @@
+import { Route, Switch } from 'react-router';
 import './App.css';
+import { Home } from './pages/Home';
+import { Signup } from './pages/Signup';
 
 function App() {
   return (
-    <div>
-      Hello World
-    </div>
+    <Switch>
+        <Route exact path={'/'} component={Home} />
+        <Route exact path={'/signup'} component={Signup} />
+    </Switch>
+    
   );
 }
 
