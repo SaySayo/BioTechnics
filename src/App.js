@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Route, Switch } from 'react-router';
 import './App.css';
 import { Home } from './pages/Home';
 import { Signup } from './pages/Signup';
+<<<<<<< HEAD
 import Explore from './pages/Explore/Explore';
 import HumanEye from "./pages/HumanEye/HumanEye";
 import HumanBrain from "./pages/HumanBrain/HumanBrain";
@@ -24,6 +25,16 @@ function App() {
       </Switch>
     </Router>
 
+=======
+
+function App() {
+  return (
+    <Switch>
+        <Route exact path={'/'} component={Home} />
+        <Route exact path={'/signup'} component={Signup} />
+    </Switch>
+    
+>>>>>>> 0f356e3ea88803cd08f3222d8ef346519b26c618
   );
 }
 
