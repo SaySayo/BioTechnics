@@ -11,7 +11,7 @@ const state = proxy({
 
 function Bio(props) {
     const group = useRef()
-    const { nodes, materials } = useGLTF('/human_brain/scene.gltf')
+    const { nodes, materials } = useGLTF('/skeleton/scene.gltf')
     const [hovered, set] = useState(null)
     console.log(hovered)
     return (
@@ -22,12 +22,28 @@ function Bio(props) {
             onPointerDown={(e) => (e.stopPropagation(), (state.current = e.object.material.name))}
         >
             <group rotation={[-Math.PI / 2, 0, 0]}>
-                <group rotation={[Math.PI / 2, 0, 0]}>
-                    <group scale={0.01}>
-                        <mesh geometry={nodes.Object_5.geometry} material={materials.material_0} />
-                    </group>
-                </group>
-            </group>
+        <group position={[-0.94, -0.56, -3.41]}>
+          <mesh geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} />
+          <mesh geometry={nodes.mesh_1.geometry} material={nodes.mesh_1.material} />
+          <mesh geometry={nodes.mesh_2.geometry} material={nodes.mesh_2.material} />
+          <mesh geometry={nodes.mesh_3.geometry} material={nodes.mesh_3.material} />
+          <mesh geometry={nodes.mesh_4.geometry} material={nodes.mesh_4.material} />
+          <mesh geometry={nodes.mesh_5.geometry} material={nodes.mesh_5.material} />
+          <mesh geometry={nodes.mesh_6.geometry} material={nodes.mesh_6.material} />
+          <mesh geometry={nodes.mesh_7.geometry} material={nodes.mesh_7.material} />
+          <mesh geometry={nodes.mesh_8.geometry} material={nodes.mesh_8.material} />
+          <mesh geometry={nodes.mesh_9.geometry} material={nodes.mesh_9.material} />
+          <mesh geometry={nodes.mesh_10.geometry} material={nodes.mesh_10.material} />
+          <mesh geometry={nodes.mesh_11.geometry} material={nodes.mesh_11.material} />
+          <mesh geometry={nodes.mesh_12.geometry} material={nodes.mesh_12.material} />
+          <mesh geometry={nodes.mesh_13.geometry} material={nodes.mesh_13.material} />
+          <mesh geometry={nodes.mesh_14.geometry} material={nodes.mesh_14.material} />
+          <mesh geometry={nodes.mesh_15.geometry} material={nodes.mesh_15.material} />
+          <mesh geometry={nodes.mesh_16.geometry} material={nodes.mesh_16.material} />
+          <mesh geometry={nodes.mesh_17.geometry} material={nodes.mesh_17.material} />
+          <mesh geometry={nodes.mesh_18.geometry} material={nodes.mesh_18.material} />
+        </group>
+      </group>
         </group>
     )
 }
@@ -38,8 +54,8 @@ function Details() {
     if (snap.current === "material_0") {
         return (
             <div className="model_part_title">
-                <h1 className="view_info_click">Frontal Lobe</h1>
-                <p className="view_info_desc">The frontal lobe is the most anterior (front) part of the brain. It extends from the area behind the forehead back to the precentral gyrus. As a whole, the frontal lobe is responsible for higher cognitive functions such as memory, emotions, impulse control, problem solving, social interaction, and motor function.</p>
+                <h1 className="view_info_click">Skull</h1>
+                <p className="view_info_desc">A variety of gross morphological traits of the human skull demonstrate sexual dimorphism, such as the median nuchal line, mastoid processes, supraorbital margin, supraorbital ridge, and the chin.</p>
             </div>
         )
     }
@@ -47,7 +63,7 @@ function Details() {
     else {
         return (
             <div className="view_info">
-                <h1 className="view_info_click">Click on diffrent parts of C 17Human Brain to know more</h1>
+                <h1 className="view_info_click">Click on diffrent parts of Skeleton to know more</h1>
                 <p className="view_info_desc">To view the 3D model in AR, scan the QR code or click on the button below.</p>
 
                 <div className="view_info_main">
@@ -59,14 +75,9 @@ function Details() {
             </div>
         )
     }
-    // return (
-    //     <div>
-    //         {snap.current}
-    //     </div>
-    // )
 }
 
-export default function HumanBrain() {
+export default function Skeleton() {
     return (
         <>
             <div className="model">
@@ -75,10 +86,10 @@ export default function HumanBrain() {
 
                 <div className="model_info">
                     <h1 className="model_info_title">
-                        Human Brain
+                    Skeleton
                     </h1>
                     <div className="explore_title_line"></div>
-                    <div className="model_info_desc">The human brain is the central organ of the human nervous system, and with the spinal cord makes up the central nervous system. The brain consists of the cerebrum, the brainstem and the cerebellum. It controls most of the activities of the body, processing, integrating, and coordinating the information it receives from the sense organs, and making decisions as to the instructions sent to the rest of the body. </div>
+                    <div className="model_info_desc">The human skeleton is the internal framework of the human body. It is composed of around 270 bones at birth – this total decreases to around 206 bones by adulthood after some bones get fused together. The bone mass in the skeleton reaches maximum density around age 21. The human skeleton can be divided into the axial skeleton and the appendicular skeleton. The axial skeleton is formed by the vertebral column, the rib cage, the skull and other associated bones. </div>
                 </div>
 
                 <div className="model3D">
@@ -88,7 +99,7 @@ export default function HumanBrain() {
                             <ambientLight intensity={0.7} />
                             <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
                             <Suspense fallback={null}>
-                                <Bio scale={2.5} />
+                                <Bio scale={.5} />
                                 <Environment preset="city" />
                                 <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                             </Suspense>

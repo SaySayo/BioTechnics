@@ -1,0 +1,11 @@
+Model Information:
+* title:	digestive system
+* source:	https://sketchfab.com/3d-models/digestive-system-f78ce703805f49d3b732e37be5b93188
+* author:	b.boukhari5d (https://sketchfab.com/b.boukhari5d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "digestive system" (https://sketchfab.com/3d-models/digestive-system-f78ce703805f49d3b732e37be5b93188) by b.boukhari5d (https://sketchfab.com/b.boukhari5d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

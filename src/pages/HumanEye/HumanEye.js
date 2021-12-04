@@ -23,32 +23,45 @@ function Bio(props) {
             onPointerDown={(e) => (e.stopPropagation(), (state.current = e.object.material.name))}
         >
             <group rotation={[-Math.PI / 2, 0, 0]}>
-                <group position={[-51.13, -6.92, -416.01]} rotation={[-Math.PI / 2, -0.24, 0]}>
-                    <mesh geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} />
-                    <mesh geometry={nodes.mesh_1.geometry} material={nodes.mesh_1.material} />
-                    <mesh geometry={nodes.mesh_2.geometry} material={nodes.mesh_2.material} />
-                    <mesh geometry={nodes.mesh_3.geometry} material={nodes.mesh_3.material} />
-                    <mesh geometry={nodes.mesh_4.geometry} material={materials.mat1} />
-                    <mesh geometry={nodes.mesh_5.geometry} material={nodes.mesh_5.material} />
-                    <mesh geometry={nodes.mesh_6.geometry} material={nodes.mesh_6.material} />
-                    <mesh geometry={nodes.mesh_7.geometry} material={nodes.mesh_7.material} />
-                    <mesh geometry={nodes.mesh_8.geometry} material={nodes.mesh_8.material} />
-                    <mesh geometry={nodes.mesh_9.geometry} material={materials.mat11} />
-                    <mesh geometry={nodes.mesh_10.geometry} material={materials.mat12} />
-                    <mesh geometry={nodes.mesh_11.geometry} material={nodes.mesh_11.material} />
-                    <mesh geometry={nodes.mesh_12.geometry} material={nodes.mesh_12.material} />
-                    <mesh geometry={nodes.mesh_13.geometry} material={nodes.mesh_13.material} />
-                    <mesh geometry={nodes.mesh_14.geometry} material={nodes.mesh_14.material} />
-                    <mesh geometry={nodes.mesh_15.geometry} material={nodes.mesh_15.material} />
-                    <mesh geometry={nodes.mesh_16.geometry} material={materials.mat14} />
-                    <mesh geometry={nodes.mesh_17.geometry} material={materials.mat15} />
-                    <mesh geometry={nodes.mesh_18.geometry} material={materials.mat4} />
-                    <mesh geometry={nodes.mesh_19.geometry} material={materials.mat5} />
-                    <mesh geometry={nodes.mesh_20.geometry} material={materials.mat6} />
-                    <mesh geometry={nodes.mesh_21.geometry} material={materials.mat7} />
-                    <mesh geometry={nodes.mesh_22.geometry} material={materials.mat8} />
-                    <mesh geometry={nodes.mesh_23.geometry} material={materials.mat9} />
+                <group position={[-7.46, -4.82, 3.33]}>
+                    <mesh geometry={nodes['������������_0'].geometry} material={materials.material_11} />
+                    <mesh geometry={nodes['������������_1_1'].geometry} material={nodes['������������_1_1'].material} />
+                    <mesh geometry={nodes['������������_2'].geometry} material={materials.Material} />
                 </group>
+                <group position={[-6.91, -5.35, 3.34]} rotation={[-Math.PI, 0, 0]} scale={[-0.43, 0.43, 0.43]}>
+                    <mesh geometry={nodes['������������������_0'].geometry} material={materials.material_10} />
+                </group>
+                <group position={[-6.71, -5.02, 3.42]} rotation={[0, Math.PI / 2, 0]} scale={0.9}>
+                    <mesh geometry={nodes['������������_0_1'].geometry} material={materials.material_9} />
+                </group>
+                <group position={[-6.7, -5.15, 3.31]} rotation={[0, Math.PI / 2, 0]} scale={0.91}>
+                    <mesh geometry={nodes['����������������_����������������_0'].geometry} material={materials.material_8} />
+                </group>
+                <group position={[-7.48, -4.82, 3.33]}>
+                    <mesh geometry={nodes['��������������������_����������������_0'].geometry} material={materials.material_7} />
+                    <mesh
+                        geometry={nodes['��������������������_����������������_1'].geometry}
+                        material={nodes['��������������������_����������������_1'].material}
+                    />
+                </group>
+                <group position={[-7.48, -4.82, 3.33]}>
+                    <mesh
+                        geometry={nodes['����������������_��_����������_��������_����������������_0'].geometry}
+                        material={materials.material_5}
+                    />
+                    <mesh
+                        geometry={nodes['����������������_��_����������_��������_����������������_1'].geometry}
+                        material={nodes['����������������_��_����������_��������_����������������_1'].material}
+                    />
+                </group>
+                <group position={[-8.28, -4.86, 2.99]} rotation={[1.57, -1.3, 1.33]} scale={[0.26, 0.26, 0.26]}>
+                    <mesh
+                        geometry={nodes['��������_����������������������_����������_0'].geometry}
+                        material={materials.material_4}
+                    />
+                </group>
+                <group position={[-7.53, -8.91, 7.54]} rotation={[0.77, 0, 0]} />
+                <group position={[-7.59, -2.49, 6.11]} />
             </group>
         </group>
     )
@@ -79,7 +92,7 @@ function Details() {
     //             <p className="view_info_desc">To view the 3D model in AR, scan the QR code or click on the button below.</p>
 
     //             <div className="view_info_main">
-    //                 <img className="view_info_qr" src="https://storage.echo3d.co/shiny-wave-1052/268c3742-66a2-4139-9bbd-f3d153aba560.png" alt="Aircraft QR" />
+    //                 <img className="view_info_qr" src="https://storage.echo3d.co/shiny-wave-1052/268c3742-66a2-4139-9bbd-f3d153aba560.png" alt="Bio QR" />
     //                 <a href="https://go.echo3d.co/Q61F" target="_blank" rel="noreferrer">
     //                     <button className="view_info_button">View in AR</button>
     //                 </a>

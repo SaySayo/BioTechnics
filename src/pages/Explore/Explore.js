@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import HumanEye from '../../assets/explore/human_eye.jpeg'
 import HumanBrain from '../../assets/explore/human_brain.jpeg'
 import HumanHeart from '../../assets/explore/human_heart.jpg'
-import HumanSekelton from '../../assets/explore/human_skeleton.jpeg'
+import HumanSkeleton from '../../assets/explore/human_skeleton.jpeg'
 import PlantCell from '../../assets/explore/plant_cell.jpg'
 import "./Explore.css"
 
@@ -29,15 +29,6 @@ const Explore = () => {
                     </div>
                 </Link>
 
-                <Link to="/humaneye" className="card" style={{ textDecoration: "none" }}>
-                    <div className="card-image">
-                        <img alt="" src={HumanEye} rel="" />
-                    </div>
-                    <div className="card-title title-black">
-                        <p>Human Eye</p>
-                    </div>
-                </Link>
-
                 <Link to="/brain" className="card" style={{ textDecoration: "none" }}>
                     <div className="card-image">
                         <img alt="" src={HumanBrain} rel="" />
@@ -47,12 +38,21 @@ const Explore = () => {
                     </div>
                 </Link>
 
-                <Link to="/sekelton" className="card" style={{ textDecoration: "none" }}>
+                <Link to="/humaneye" className="card" style={{ textDecoration: "none" }}>
                     <div className="card-image">
-                        <img alt="" src={HumanSekelton} rel="" />
+                        <img alt="" src={HumanEye} rel="" />
                     </div>
                     <div className="card-title title-black">
-                        <p>Human Sekelton</p>
+                        <p>Human Eye</p>
+                    </div>
+                </Link>
+
+                <Link to="/skeleton" className="card" style={{ textDecoration: "none" }}>
+                    <div className="card-image">
+                        <img alt="" src={HumanSkeleton} rel="" />
+                    </div>
+                    <div className="card-title title-black">
+                        <p>Human Skeleton</p>
                     </div>
                 </Link>
 
