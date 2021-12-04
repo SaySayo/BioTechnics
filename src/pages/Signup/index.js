@@ -29,7 +29,7 @@ export const Signup = () => {
               placeholder="Password"
             />
           </div>
-          <input type="submit" name="" value="Sign In"
+          <input type="submit" name="" value="Log In"
           onClick={() => loginWithRedirect()}/>
         </form>
         <a href="#">
