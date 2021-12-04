@@ -1,7 +1,10 @@
 import React from "react";
 import "./style.css";
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 export const Signup = () => {
+  const { loginWithRedirect } = useAuth0();
   return (
       <div className="loginBox">
         <img
@@ -26,14 +29,15 @@ export const Signup = () => {
               placeholder="Password"
             />
           </div>
-          <input type="submit" name="" value="Sign In" />
+          <input type="submit" name="" value="Sign In"
+          onClick={() => loginWithRedirect()}/>
         </form>
         <a href="#">
           Forget Password
           <br />{" "}
         </a>
         <div className="text-center">
-          <button className="sign-up-btn" style={{color: '#23708f'}}>Sign-Up</button>
+          <button className="sign-up-btn" style={{color: '#23708f'}} onClick={() => loginWithRedirect()}>Sign-Up</button>
         </div>
       </div>
   );
