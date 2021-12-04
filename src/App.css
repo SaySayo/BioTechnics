@@ -7,13 +7,13 @@
 body {
   margin: 0;
   padding: 0;
-  /* background: url(./assets/bio-img.jpeg) no-repeat; */
+  background: url(./assets/bio-img.jpeg) no-repeat;
   height: 100vh;
   font-family: sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* overflow: hidden */
+  overflow: hidden
 }
 
 @media screen and (max-width: 600px)
