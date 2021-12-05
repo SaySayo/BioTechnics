@@ -1,0 +1,99 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>BioTechnics</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <img class="header__img" src="https://i.postimg.cc/5ty3QzZt/logo.png
+" alt="Website logo" id="header-img">
+    <h1 class="header__h1" id="header-text"> BioTechnics</h1>
+    <nav class="nav-bar" id="nav-bar">
+      <li><a class="nav-bar__nav-link nav-link" href="/">Home</a></li>
+      <li><a class="nav-bar__nav-link nav-link" href="/explore">Explore</a></li>
+      <li><a class="nav-bar__nav-link nav-link" href="#features">Features</a></li>
+      <li><a class="nav-bar__nav-link nav-link" href="#contact">Contact</a></li>
+      <li><a class="nav-bar__nav-link nav-link" href="/signout">Sign Out</a></li>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="description">
+      <div>
+        <h1>BioTechnics</h1>
+        <p>
+          BioTechnics is an AR-based web platform where students from any
+          background can visit and learn various concepts in biology with
+          the help of 3D Models, which can aid in easier and faster
+          understanding. BioTechnics focuses on full visualization and
+          imersion of biological science concepts.
+        </p>
+        <a  href="/explore"><button class="explore-btn">Explore</button></a>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+
+      <div class="features__container">
+        <img src="https://i.postimg.cc/L8HvRwDL/affordable.png
+" alt="feature icon" class="features__img">
+        <div class="features__text">
+          <h3 class="features__h3">Zero Cost</h3>
+          <div class="features__p">Get access to various lessons on biology at zero cost</div>
+        </div>
+      </div>
+
+      <div class="features__container">
+        <img src="https://i.postimg.cc/W4y7G3vw/presentation.png
+" alt="feature icon" class="features__img">
+        <div class="features__text">
+          <h3 class="features__h3">3D models for real world visualization</h3>
+          <div class="features__p">Get ahead by learning visually with real world 3D models.</div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="other-ft" id="other-feature">
+      <div class="ft__box">
+        <h3 class="ft__tag">Interactive 3D Models</h3>
+        <div class="ft-container">
+          <p class="ft__info ft__info--full">Digital 3D models allow students to visualize and interrogate
+            various topics; they reinforce spatial skills, facilitate
+            student recognition of pre-learned various principles in the
+            field, and encourage students to think about their processes and
+            properties.</p>
+        </div>
+      </div>
+
+      <div class="ft__box">
+        <h3 class="ft__tag">Learn With Augmented Reality</h3>
+        <div class="ft-container">
+          <p class="ft__info ft__info--full">Augmented Reality's relative seamlessness of digital objects
+            within the real world encourages interactivity and engagement.
+            It maximizes students' ability to spend their time learning
+            curricular subjects while minimizing the time spent learning how
+            to use the new tech.</p>
+        </div>
+      </div>
+    </section>
+    <section class="user-info">
+      <form action="action.php" id="form">
+        <label class="form__label" for="email">Get in touch</label> <br>
+        <input class="form__input" name="email" type="email" id="email" placeholder="enter your email id" required><br>
+        <input type="submit" id="submit" value="Submit" class="form__btn">
+      </form>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
