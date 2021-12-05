@@ -5,7 +5,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 export const Home = () => {
   const { logout } = useAuth0();
   return (
-    <div>
+    <div className="body">
       <header>
         <nav id="navbar">
           <ul>

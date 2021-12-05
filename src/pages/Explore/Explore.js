@@ -11,7 +11,7 @@ import "./Explore.css"
 
 const Explore = () => {
     return (
-        <div>
+        <div className="explore">
 
             <div className="explore_title">
                 <h1 className="explore_title_text">

@@ -1,9 +1,15 @@
+.explore{
+  background-color: #1B2431;
+  font-family: 'Playfair Display', serif;
+}
+
 .explore_title {
   display: grid;
   place-items: center;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  color: white;
 }
 
 .explore_title_text {
@@ -41,6 +47,7 @@
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   transition: 0.4s;
+  background-color: white;
 }
 
 .card .card-image {

@@ -1,5 +1,7 @@
 .model {
   padding-top: 40px;
+  background-color: #1B2431;
+  color: white;
 }
 
 .model_goback {
@@ -24,6 +26,7 @@
   text-align: justify;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  letter-spacing: 1px;
   width: 70rem;
   margin-top: 1rem;
   margin-left: 6rem;
@@ -69,6 +72,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  letter-spacing: 1px;
 }
 
 .view_info_click {

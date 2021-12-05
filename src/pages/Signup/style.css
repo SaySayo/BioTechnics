@@ -1,144 +1,144 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: url(../../assets/bio-img.jpeg) no-repeat;
-    height: 100vh;
-    font-family: sans-serif;
+.body {
+  margin: 0;
+  padding: 0;
+  background: url(../../assets/bio-img.jpeg) no-repeat;
+  height: 100vh;
+  font-family: sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .body {
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden
+    background-position: fixed;
   }
-  
-  @media screen and (max-width: 600px)
-  {
-    body {
-        background-size: cover;
-        background-position: fixed
-    }
-  }
+}
 
 #particles-js {
-    height: 100%
+  height: 100%;
 }
 
 .loginBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    min-height: 200px;
-    background: #06171bfb;
-    border-radius: 10px;
-    padding: 40px;
-    box-sizing: border-box
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  min-height: 200px;
+  background: #06171bfb;
+  border-radius: 10px;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .user {
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 20px
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
 }
 h1 {
-    margin: 0;
-    padding: 0 0 10px;
+  margin: 0;
+  padding: 0 0 10px;
 }
 
 h3 {
-    margin: 0;
-    padding: 0 0 20px;
-    color: #232e8f;
-    text-align: center
+  margin: 0;
+  padding: 0 0 20px;
+  color: #232e8f;
+  text-align: center;
 }
 
 .loginBox input {
-    width: 100%;
-    margin-bottom: 20px
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .loginBox input[type="text"],
 .loginBox input[type="password"] {
-    border: none;
-    border-bottom: 2px solid #36bbd3;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    background: transparent;
-    font-size: 16px;
-    padding-left: 20px;
-    box-sizing: border-box
+  border: none;
+  border-bottom: 2px solid #36bbd3;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  background: transparent;
+  font-size: 16px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .loginBox input[type="text"]:hover,
 .loginBox input[type="password"]:hover {
-    color: #42F3FA;
-    border: 1px solid #42F3FA;
-    box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
+  color: #42f3fa;
+  border: 1px solid #42f3fa;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.3), 0 0 10px rgba(0, 255, 0, 0.2),
+    0 0 15px rgba(0, 255, 0, 0.1), 0 2px 0 black;
 }
 
 .loginBox input[type="text"]:focus,
 .loginBox input[type="password"]:focus {
-    border-bottom: 2px solid #42F3FA
+  border-bottom: 2px solid #42f3fa;
 }
 
 .inputBox {
-    position: relative
+  position: relative;
 }
 
 .inputBox span {
-    position: absolute;
-    top: 10px;
-    color: #262626
+  position: absolute;
+  top: 10px;
+  color: #262626;
 }
 
 .loginBox input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 40px;
-    font-size: 16px;
-    background: #295ca8;
-    color: #fff;
-    border-radius: 20px;
-    cursor: pointer
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  background: #295ca8;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .loginBox:hover {
-    color: rgb(58, 76, 124);
+  color: rgb(58, 76, 124);
 }
 
 .loginBox a {
-    color: #7e8385;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    display: block
+  color: #7e8385;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  display: block;
 }
 
 a:hover {
-    color: #00ffff
+  color: #00ffff;
 }
 
-.text-center{
-    justify-content: center;
+.text-center {
+  justify-content: center;
 }
 
 .sign-up-btn {
-    border: none;
-    outline: none;
-    position: relative;
-    top: 10px;
-    left: 75px;
-    text-align: center;
-    height: 30px;
-    width: 8em;
-    font-size: 16px;
-    background: #edeff3;
-    color: #fff;
-    border-radius: 20px;
-    cursor: pointer
+  border: none;
+  outline: none;
+  position: relative;
+  top: 10px;
+  left: 75px;
+  text-align: center;
+  height: 30px;
+  width: 8em;
+  font-size: 16px;
+  background: #edeff3;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.sign-up-btn:hover{
-    color: darkblue;
+.sign-up-btn:hover {
+  color: darkblue;
 }
